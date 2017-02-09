@@ -6,7 +6,6 @@
     <!-- display the page content in a card if no entryTypes -->
     <md-card class="center" *ngIf="pageEntries.length < 1">
         <!-- Page Content -->
-        <!-- TODO: Need a filter to not remove style tags: http://stackoverflow.com/questions/39628007/angular2-innerhtml-binding-remove-style-attribute -->
         <div [innerHTML]="pageContent | safeHtml">
         </div>
     </md-card>
@@ -14,7 +13,6 @@
     <!-- Display the page content, and a flex box of cards of the pages -->
     <div class="center" *ngIf="pageEntries.length >= 1">
         <!-- Page Content -->
-        <!-- Need a filter to not remove style tags: http://stackoverflow.com/questions/39628007/angular2-innerhtml-binding-remove-style-attribute -->
         <div class="center-text" [innerHTML]="pageContent | safeHtml">
         </div>
 
@@ -22,7 +20,6 @@
             <!-- Repeat through all of our entries -->
             <md-card class="c-page__entry-container__entry" *ngFor="let entry of pageEntries">
                 <!-- Entry Content -->
-                <!-- TODO: Need a filter to not remove style tags: http://stackoverflow.com/questions/39628007/angular2-innerhtml-binding-remove-style-attribute -->
                 <div [innerHTML]="entry.content | safeHtml">
                 </div>
             </md-card>

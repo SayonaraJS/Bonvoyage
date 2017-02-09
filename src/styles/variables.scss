@@ -1,6 +1,6 @@
 //Colors
 $standard: #050505;
-$inverse: #F2F2F2;
+$inverse: #F9F9F9;
 
 //Dark transparent
 $transparent: rgba(0, 0, 0, 0);
@@ -14,6 +14,6 @@ $transparent-light-25: rgba(255, 255, 255, 0.25);
 $transparent-light-50: rgba(255, 255, 255, 0.5);
 $transparent-light-75: rgba(255, 255, 255, 0.75);
 
-$bgColor: #e6decd;
-$navColor: #EAEAEA;
+$bgColor: $inverse;
+$navColor: #FFFFFF;
 $links: #4a9cee;
